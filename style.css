@@ -15,14 +15,22 @@ body{
     margin: auto;
 }
 
+h1{
+    color: #ffff21;
+    font-family: "Minecraft";
+    /*width: 60%;*/
+    float: left;
+    padding-top: 8px;
+}
+
 #score{
     float: left;
     font-family: "Minecraft";
     font-size: 2em;
-    padding: 30px;
+    padding-top: 30px;
     color: white;
     text-align: left;
-    width: 50%;
+    width: 23%;
 }
 
 #canvas{
