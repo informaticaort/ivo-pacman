@@ -23,7 +23,7 @@ h1{
     padding-top: 8px;
 }
 
-#score{
+#puntaje{
     float: left;
     font-family: "Minecraft";
     font-size: 2em;
@@ -40,11 +40,11 @@ h1{
     margin: 10px;
 }
 
-#lives{
+#vidas{
     text-align: left;    
 }
 
-#lives img{
+#vidas img{
     width: 2em;
     padding: 10px;
     image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */

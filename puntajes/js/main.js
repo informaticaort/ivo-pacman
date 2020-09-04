@@ -23,10 +23,10 @@ function listarPuntajes() {
     
 }
 
-function calcSpeed(speed) {
+function calcSpeed(velocidad) {
     // Time = Distance/Speed
     var marquee = document.querySelector('.marquee');
-    var timeTaken = marquee.offsetHeight / speed;
+    var timeTaken = marquee.offsetHeight / velocidad;
     var nodes = marquee.childNodes;
     for(var i=0; i<nodes.length; i++) {
             nodes[i].style.animationDuration = timeTaken + "s";
