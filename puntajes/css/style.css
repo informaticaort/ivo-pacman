@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Minecraft';    
+    src: url('../fonts/Minecraft.ttf')  format('truetype'); 
+}
+
+body{
+    background-color: black;
+    font-family: 'Minecraft';
+    text-align: center;
+}
+
+#tituloPje{
+    padding-top: 60px;
+}
+
+ul{
+    text-align: left;
+}
+          
+.puntos{
+    margin: 0;
+    vertical-align: top;
+    margin-top: 7px;
+    font-size: 30px;
+}
+
+.inline{
+    display: inline-block;
+}
+
+.rojo{
+    color: #f8222d;
+}
+
+.rosa{
+    color: #ffadc7;
+}
+
+.celeste{
+    color: #0bddca;
+}
+
+.naranja{
+    color: #ff9a30;
+}
+
+.amarillo{
+    color: #ffff21;
+}
+
+.blanco{
+    color: #fff;
+}
+
+span{
+    padding-left: 100px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 13rem;
+}
+
+#content-wrap {
+    margin-top: 4rem;
+    padding-bottom: 13rem;    /* Altura del footer */
+}
+
+.marquee {
+    height: 280px;
+    overflow: hidden;
+  }
+  
+  .marquee li {
+    animation: marquee linear infinite;
+    animation-delay: 1s;
+  }
+  
+  @-webkit-keyframes marquee {
+    0% {
+      -webkit-transform: translateY(0)
+    }
+    100% {
+      -webkit-transform: translateY(-280px)
+    }
+  }
+  .marquee:hover li {
+    -webkit-animation-play-state: paused; 
+      animation-play-state: paused;
+  }
