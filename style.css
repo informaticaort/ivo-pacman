@@ -8,6 +8,7 @@ body{
     margin: 0;
     background: black;
     text-align:center;
+    font-family: "Minecraft";
 }
 
 #main{
@@ -22,6 +23,37 @@ h1{
     float: left;
     padding-top: 8px;
 }
+
+span{
+    color: #0bddca;
+}
+
+.btn{
+    display: block;
+  width: 250px;
+  margin: 0 auto;
+  height: 50px;
+  border: 2px solid #AA2699;
+  color: white;
+  font-family: 'Audiowide', cursive;
+  font-size: 30px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  background-color: #FB1886;
+  background-image: -webkit-linear-gradient(bottom, #FB1886 0%, #B30D5D 100%);
+  background-image: linear-gradient(to bottom, #FB1886 0%, #B30D5D 100%);
+  border-radius: 5px;
+  transition: 0.5s;
+  opacity: 0.8;
+  vertical-align: middle;
+}
+
+.btn:hover {
+    background-color: #B30D5D;
+    background-image: -webkit-linear-gradient(bottom, #B30D5D 0%, #FB1886 100%);
+    background-image: linear-gradient(to bottom, #B30D5D 0%, #FB1886 100%);
+    transform: scale(1.5) rotate(2deg);
+    opacity: 1;
+  }
 
 #puntaje{
     float: left;

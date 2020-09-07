@@ -40,7 +40,18 @@
       
       <canvas id="canvas"></canvas>
       <div id="vidas">0</div>
-     
+      <div id="game-over">
+        <h2>¡Sumaste <span id="score"></span> puntos!</h2>
+        <form id="registrarPje" action="" method="post">
+          <h2>Nombre: <input type="text" name="nickname" class="w3-round" id="nickname" size="3" maxlength="3"/></h2>
+            <input type="hidden" name="puntos" id="puntos" value="" />
+            <input type="submit" value="Enviar" class="btn">
+        </form>
+        
+        </br>
+        <input type="button" value="Reiniciar">
+      </div>
     </div>
+    <script src="lib/form-ajax.js"></script>
   </body>
 </html>
