@@ -29,18 +29,13 @@ span{
 }
 
 .btn{
-    display: block;
-  width: 250px;
-  margin: 0 auto;
-  height: 50px;
-  border: 2px solid #AA2699;
+  display: inline-block;
+  border: 2px solid #08B0A1;
   color: white;
   font-family: 'Audiowide', cursive;
-  font-size: 30px;
+  font-size: 21px;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  background-color: #FB1886;
-  background-image: -webkit-linear-gradient(bottom, #FB1886 0%, #B30D5D 100%);
-  background-image: linear-gradient(to bottom, #FB1886 0%, #B30D5D 100%);
+  background-color: #0BDDCA;
   border-radius: 5px;
   transition: 0.5s;
   opacity: 0.8;
@@ -48,9 +43,6 @@ span{
 }
 
 .btn:hover {
-    background-color: #B30D5D;
-    background-image: -webkit-linear-gradient(bottom, #B30D5D 0%, #FB1886 100%);
-    background-image: linear-gradient(to bottom, #B30D5D 0%, #FB1886 100%);
     transform: scale(1.5) rotate(2deg);
     opacity: 1;
   }
@@ -69,9 +61,9 @@ span{
     display: inline;
     text-align:center;
     margin: 10px;
-    position: absolute;
+    /*position: absolute;
     top: 10%;
-    left: 31%;
+    left: 31%;*/
 }
 
 #vidas{
@@ -113,17 +105,28 @@ span{
 #game-over {
     display: none;
     text-align: center;
-    padding-top: 150px;
+    padding-top: 15%;
     z-index: 1;
     width: 700px;
-    height: 713px;
+    height: 570px;
     position: absolute;
     background-color: #000c;
+    top: 0;
   }
   
   #game-over h2{
     color: white;
     font-style: normal;
+    display: inline-block;
+  }
+
+  #game-over p{
+    color: white;
+  }
+
+  #game-over a{
+    color: #0bddca;
+    text-decoration: none;
   }
   
   #game-over .button{
