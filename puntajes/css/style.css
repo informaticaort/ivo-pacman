@@ -73,9 +73,9 @@ footer{
     overflow: hidden;
   }
   
-  .marquee li {
-    animation: marquee linear infinite;
-    animation-delay: 1s;
+  .marquee ul {
+    animation: marquee  linear infinite;
+    animation-delay: 2s;
   }
   
   @-webkit-keyframes marquee {
@@ -83,10 +83,10 @@ footer{
       -webkit-transform: translateY(0)
     }
     100% {
-      -webkit-transform: translateY(-280px)
+      -webkit-transform: translateY(-100%)
     }
   }
-  .marquee:hover li {
+  ul:hover{
     -webkit-animation-play-state: paused; 
       animation-play-state: paused;
   }

@@ -6,9 +6,9 @@ function listarPuntajes() {
     fetch(url)
         .then(response => response.json())
         .then(puntajes => {
-            console.log(puntajes);
-            let pts = JSON.parse(puntajes.body);
+            let pts = puntajes.body;
             pts.sort((a, b) => parseFloat(b.Puntaje) - parseFloat(a.Puntaje));
+            console.log(pts);
             pts.forEach(element => {
                 if(i==4)
                     i=0;
@@ -16,20 +16,15 @@ function listarPuntajes() {
                 listadoPtos.innerHTML+=`<li><img src="img/fantasmas/${color}.png" alt=""><h3 class="puntos inline ${color}">- "${element.Nickname.toUpperCase()}"<span class="puntos ${color}">${element.Puntaje} PTS</span></h3></li>`
                 i++;
             });
-            
-    }).then(()=>{
-        calcSpeed(100)
+            calcularTiempo(50, pts.length);
     });
     
 }
 
-function calcSpeed(velocidad) {
-    // Time = Distance/Speed
-    var marquee = document.querySelector('.marquee');
-    var timeTaken = marquee.offsetHeight / velocidad;
-    var nodes = marquee.childNodes;
-    for(var i=0; i<nodes.length; i++) {
-            nodes[i].style.animationDuration = timeTaken + "s";
-        
-    }
+function calcularTiempo(velocidad, cantElementos) {
+    // Tiempo   = Distancia/Velocidad
+    var puntaje = document.querySelector('li');
+    var tiempo = puntaje.offsetHeight / velocidad * cantElementos;
+    var marquee = document.querySelector('.marquee ul')
+    marquee.style.animationDuration=tiempo+"s";
   }
